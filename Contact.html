@@ -1,5 +1,76 @@
-<h1>Hubungi Kami</h1>
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .info {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
 
-<p>Sila hubungi saya</p>
+<div class="container">
+    <h2>Hubungi Kami</h2>
+    
+    <form action="#" method="post">
+        <label>Nama</label>
+        <input type="text" name="nama" placeholder="Masukkan nama anda" required>
 
-<ul>Team Am</ul>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Masukkan email anda" required>
+
+        <label>Mesej</label>
+        <textarea name="mesej" rows="5" placeholder="Tulis mesej anda..." required></textarea>
+
+        <button type="submit">Hantar</button>
+    </form>
+
+    <div class="info">
+        <p>Email: support@mara.gov.my</p>
+        <p>Telefon: 0196691854</p>
+    </div>
+</div>
+
+</body>
+</html>
