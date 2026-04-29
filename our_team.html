@@ -1,1 +1,229 @@
-<team></team>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #f8f9fa;
+      color: #212529;
+    }
+
+    header {
+      background: #0d6efd;
+      color: #fff;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav h1 {
+      font-size: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .page-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .page-title h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .page-title p {
+      color: #495057;
+      font-size: 16px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .team-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      font-weight: bold;
+      margin-bottom: 18px;
+      box-shadow: inset 0 4px 12px rgba(255, 255, 255, 0.15);
+    }
+
+    .team-card h3 {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .team-card p {
+      color: #6c757d;
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    .team-card .bio {
+      color: #495057;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 20px;
+      color: #6c757d;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 16px;
+      }
+
+      .page-title h2 {
+        font-size: 28px;
+      }
+
+      .page-title p {
+        font-size: 15px;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>MyCorp</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="user.html">User</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="our_team.html">Our Team</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="register.html" style="background:#fff;color:#0d6efd;padding:6px 12px;border-radius:5px;">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-title">
+      <h2>Meet Our Team</h2>
+      <p>Our experienced and passionate team works together to bring you great solutions, fast support, and a customer-first experience.</p>
+    </section>
+
+    <section class="team-grid">
+      <article class="team-card">
+        <div class="avatar">JD</div>
+        <h3>John Doe</h3>
+        <p>Chief Executive Officer</p>
+        <p class="bio">Leads the company vision and builds high-performing teams across product, marketing, and operations.</p>
+      </article>
+
+      <article class="team-card">
+        <div class="avatar">JS</div>
+        <h3>Jane Smith</h3>
+        <p>Chief Technology Officer</p>
+        <p class="bio">Drives technology strategy and ensures our products remain secure, scalable, and innovative.</p>
+      </article>
+
+      <article class="team-card">
+        <div class="avatar">AA</div>
+        <h3>Ali Ahmad</h3>
+        <p>Lead Developer</p>
+        <p class="bio">Builds modern web experiences and manages the development team for fast delivery.</p>
+      </article>
+
+      <article class="team-card">
+        <div class="avatar">LN</div>
+        <h3>Lina Nguyen</h3>
+        <p>Product Designer</p>
+        <p class="bio">Designs intuitive interfaces and ensures every customer interaction is clear, helpful, and beautiful.</p>
+      </article>
+
+      <article class="team-card">
+        <div class="avatar">MT</div>
+        <h3>Mark Taylor</h3>
+        <p>Customer Success Manager</p>
+        <p class="bio">Supports clients with onboarding, training, and ongoing success strategies.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 MyCorp. All rights reserved.</p>
+  </footer>
+</body>
+</html>
